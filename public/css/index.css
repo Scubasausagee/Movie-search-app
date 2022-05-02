@@ -1,0 +1,30 @@
+body {
+    background-color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#mainContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #F7F7FA;
+    line-height: 1.5;
+}
+
+#movieInput {
+    border-radius: 5px;
+    width: 97%;
+}
+
+#submitButton {
+    padding: 1px 0px;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    color: azure;
+    border-color: #2f2f2f;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+<div id="Item">
+    <div class="centerEl">
+        <h3>{{title}}</h3>
+    </div>
+    <br>
+    <div class="centerEls">
+        <span class="rating"><b>Rating:</b> {{rating}}</span> <span class="date"><b>Release Date:</b> {{releaseDate}}</span>
+    </div><br>
+    <span id="description"><b>Description:</b> {{description}}</span> <br>
+    <div class="centerEls">
+        <button id="youTube{{@index}}" onclick="openYouTube(this.id)">Watch trailer on YouTube</button>
+        <button id="trailer{{@index}}" onclick="openPlayerDialog(this.id)">Watch trailer</button>
+    </div>
+    <span id="trailer" class="trailer">{{youTubeTrailer}}</span>
+    <span id="play" class="trailer">{{playTrailer}}</span>
+</div>

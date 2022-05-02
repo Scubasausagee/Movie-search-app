@@ -1,0 +1,61 @@
+body {
+    background-color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
+    vertical-align: top;
+}
+
+#mainContainer {
+    padding-left: 5%;
+}
+
+#Item{
+    background-color: #F7F7FA;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    display: inline-block;
+    width: 20%;
+    margin: 10px 20px;
+    height: auto;
+    text-align: justify;
+    align-items: center;
+}
+
+.centerEl {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 8vh;
+    width: 100%;
+}
+
+.centerEls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#description {
+    display: block;
+    height: 20vh;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+
+button {
+    padding: 1px 0px;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    color: azure;
+    border-color: #2f2f2f;
+    width: 45%;
+}
+
+.trailer {
+    display: none;
+}
+
+#trailerVideo {
+    width: 60vw;
+    height: 60vh;
+}
