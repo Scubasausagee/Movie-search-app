@@ -5,7 +5,6 @@ const { checkCache } = require('../middleware/cacheMiddleware');
 const validateLength = require('../middleware/validateLengthMiddleware');
 const apiService = require('./APIService');
 const path = require('path');
-const req = require('express/lib/request');
 
 var app = express();
 const viewPath = path.join(__dirname, '../public/templates' );
@@ -29,6 +28,7 @@ app.get('/movieSearch', validateLength, checkCache, async (req,res) => {
     var movieName = req.query.movieName;
     var cachedItem = req.cachedItem;
 
+    // check to see if there is cached search
     if (cachedItem !== undefined) {
         res.render('resultsPage', {
             movieName,
